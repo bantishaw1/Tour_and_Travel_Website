@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form method="post" action="Registration" name="Register">
+            <table border="0" width="100%">
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="R1" required></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="R2" placeholder="Full Name" required></td>
+                </tr>
+                <tr>
+                    <td>Contact No:</td>
+                    <td><input type="tel" name="R3" pattern="[0-9]{10}" placeholder="10-digit number" required></td>
+                </tr>
+                <tr>
+                    <td>Security Question:</td>
+                    <td>
+                        <select name="R4" required>
+                            <option value="">Select</option>
+                            <option value="pet_name">What is your pet's name?</option>
+                            <option value="mother_maiden">What is your mother's maiden name?</option>
+                            <option value="birth_city">In which city were you born?</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Answer:</td>
+                    <td><input type="text" name="R5" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="R6" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Register" class="btn btn-primary">
+                        <input type="reset" value="Clear" class="btn btn-danger">
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <h4>IF YOU ALREADY REGISTERED THEN GOTO LOGIN PAGE</h4>
+        <a href="login.html">LOGIN PAGE</a>
+        <br><br>
+
+        <div class="home-btn">
+            <a href="index.html" class="btn-success">GO TO HOME</a>
+        </div>
+    </div>
+</body>
+</html>

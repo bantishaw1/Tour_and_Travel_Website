@@ -1,0 +1,160 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f9ff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #007BFF, #00BFFF);
+    padding: 15px 40px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+.auth-btns .btn {
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.login {
+    background: #fff;
+    color: #007BFF;
+}
+
+.signup {
+    background: #FFD700;
+    color: #333;
+}
+
+.login:hover, .signup:hover {
+    opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   /* Full screen */
+    background: url('images/bgimage.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 6px black;
+}
+
+/* Dark overlay for text readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Places Section */
+.places {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.place-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Contact Section */
+.contact {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact input, 
+.contact textarea {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.contact button {
+    padding: 12px 20px;
+    border: none;
+    background: #FFD700;
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #ffcc00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+}

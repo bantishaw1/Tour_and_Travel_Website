@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Buses - Tour & Travel</title>
+    <link rel="stylesheet" href="FBTHallpages.css">
+</head>
+<body>
+    <header>
+        <h1>Tour & Travel</h1>
+        <nav>
+            <a href="home">Dashboard</a>
+            <a href="userflights.html">Flights</a>
+            <a href="usertrains.html">Train</a>
+            <a href="userholidays.html">Holidays</a>
+            <a href="MyBookings">My Bookings</a>
+            <a href="editProfile.html">Profile</a>
+            <a href="logout">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Book Buses</h2>
+        <p>Search & compare cheap buses to top destinations in India and worldwide.</p>
+        <form action="userSearchBuses" method="post">
+        <label>From: </label><input type="text" name="fromCity" placeholder="Delhi" required><br><br>
+        <label>To: </label><input type="text" name="toCity" placeholder="Mumbai" required><br><br>
+        <label>Date: </label><input type="date" name="travelDate" required><br><br>
+    <button type="submit">Search Buses</button>
+</form>
+
+    </div>
+</body>
+</html>
