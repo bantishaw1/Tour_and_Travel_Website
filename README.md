@@ -70,6 +70,10 @@ git clone https://github.com/bantishaw1/Tour_and_Travel_Website.git
 5. Open in browser:
 http://localhost:8080/
 
+## 📄 Project Documentation
+
+👉 [View Full Project](Documentation%20Project.pdf)
+
 ---
 
 ## 🤝 Team Contribution
